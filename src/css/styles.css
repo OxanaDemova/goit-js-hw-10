@@ -17,4 +17,37 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.country-name {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.countries-name {
+  display: inline;
+}
+
+.country-capital {
+  margin-bottom: 5px;
+}
+
+.country-population {
+  margin-bottom: 5px;
+}
+
+.country-capital__span {
+  font-weight: bold;
+}
+
+.country-population__span {
+  font-weight: bold;
+}
+
+.country-languages__span {
+  font-weight: bold;
 }
