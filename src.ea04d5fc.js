@@ -14,4 +14,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/styles.css");var e=o(require("./js/fetchCountries")),t=require("./js/markup"),r=o(require("lodash.debounce")),n=o(require("notiflix"));function o(e){return e&&e.__esModule?e:{default:e}}const s=300,u={searchForm:document.getElementById("search-box")};function a(r){const o=r.target.value.trim();o&&(0,e.default)(o).then(e=>{1===e.length&&(0,t.renderMarkupForCountry)(e),e.length>=2&&e.length<=10&&(0,t.renderMarkupForCountries)(e),e.length>10&&(n.default.Notify.info("Too many matches found. Please enter a more specific name."),t.cardList.innerHTML="")}).catch(e=>{n.default.Notify.failure("Oops, there is no country with that name."),console.log(e),t.cardList.innerHTML=""})}u.searchForm.addEventListener("input",(0,r.default)(a,300));
 },{"./css/styles.css":"krre","./js/fetchCountries":"irxn","./js/markup":"tW6H","lodash.debounce":"PZFh","notiflix":"cwzQ"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10/src.e19fbd27.js.map
+//# sourceMappingURL=/goit-js-hw-10/src.ea04d5fc.js.map
